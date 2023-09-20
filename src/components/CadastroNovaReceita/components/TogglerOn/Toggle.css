@@ -1,0 +1,76 @@
+.boton-chave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 0.5px solid #FFFFFF;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.boton-chave--ligado {
+  background: #E8E8E8;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 101px;
+}
+
+.boton-chave--desligado {
+  background: #E8E8E8;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 101px;
+}
+
+.botao-chave {
+  position: absolute;
+  top: 1.6px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(0);
+}
+
+
+h5 {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 24px;
+  color: #456573;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boton-chave--ligado .botao-chave {
+  background: #456573;
+  transform: translateX(24px);
+}
+
+.boton-chave--desligado .botao-chave {
+  background: #456573;
+}
+
+.boton-chave--ligado h5 {
+  text-align: right;
+  margin-right: 24px;
+}
+
+.boton-chave--desligado h5 {
+  text-align: left;
+  margin-left: 24px;
+}
+
+.boton-chave--ligado.h5-reverso h5 {
+  transform: translateY(-50%) translateX(-24px);
+}
+
+.boton-chave--desligado.h5-reverso h5 {
+  transform: translateY(-50%) translateX(24px);
+}
